@@ -19,7 +19,7 @@ if [[ $create_image = "True" ]]; then
    if [[ -z $tag ]]; then
      image=$wf-$branch
    else 
-     image=$wf-$branch:$tag
+     image=$wf-$branch.$tag
    fi 
    image=${image,,}
 

@@ -33,6 +33,11 @@ inputs:
         an option to create Docker images
       default: 'True'
 
+  image-caching:
+      description: > 
+        an option to cache Docker images
+      default: 'True'
+
 node_types:
 
   docker_container:
