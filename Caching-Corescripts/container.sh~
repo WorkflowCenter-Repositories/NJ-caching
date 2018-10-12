@@ -25,7 +25,7 @@ task_image=$base'_'$task
 ctx logger info "image is ${task_image}"
 set -e
 
-if [[ "$(sudo docker images -q dtdwd/${task_image} 2> /dev/null)" != "" ]]; then
+if [[ "$(Sudo docker images -q dtdwd/${task_image} 2> /dev/null)" != "" ]]; then
  ctx logger info "local task image"
  Image=dtdwd/${task_image}
 else 
